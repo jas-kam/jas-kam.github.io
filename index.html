@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+
     <title>Jasmine's Portfolio</title>
 </head>
 <body>
@@ -17,11 +18,60 @@
             <div class="info">
                 <h1>Hi, I'm Jasmine - A Final Year Computer Science Student </h1>
                 <h2>Interested in what I do? Check me out:</h2>
+                <div class="buttons">
+                    <a href="#projects" class="button">Projects</a>
+                    <a href="#carousel" class="button">Pictures</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="projects">
+    <div id="carousel" class="carousel">
+        <h2>Photography Snippets:</h2>
+        <div class="slides">
+            <figure>
+                <img src="images/photography/100_0001.JPG">
+                <figcaption>📍St. Peter's Church, London</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photography/100_0137.JPG">
+                <figcaption>📍Kyoto Gardens, London</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photography/100_0157.JPG">
+                <figcaption>📍Seven Sister Cliffs, London</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photography/100_0199.JPG">
+                <figcaption>📍Prague Zoo, Czech Republic</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photography/100_0207.JPG">
+                <figcaption>📍Man Hanging Out, Czech Republic</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photography/100_0260.JPG">
+                <figcaption>📍St. Peter's Basilica, Rome</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class ="photo-files">
+        <button class="file-button" onclick="openGallery('italy')">Italy</button>
+        <button class="file-button" onclick="openGallery('japan')">Japan</button>
+        <button class="file-button" onclick="openGallery('czech')">Czech Republic</button>
+        <!-- <button class="file-button" onclick="openGallery('china')">China</button> -->
+    </div>
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGallery()">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <div id="modalImages" class="modal-images"></div>
+        </div>
+    </div>
+
+
+    <div id="projects" class="projects">
         <h2>Here's what I've been getting down to:</h2>
         <div id="movie">
             <h3>Movie Recommender - Incomplete</h3>
@@ -74,5 +124,6 @@
             </ul>
         </div>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
