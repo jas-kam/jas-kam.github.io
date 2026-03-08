@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: #757a9b;
 }
 
 #h2{
@@ -183,8 +183,11 @@ body{
 }
 
 .projects {
-    background-color: whitesmoke;
+    background-color: #757a9b;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 60px 40px;
+    color: white;
+    font-size: 17px;
 }
