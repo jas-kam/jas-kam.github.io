@@ -4,8 +4,24 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: whitesmoke;
+}
+
 #h2{
-    margin: 50px 0;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+#photography-title{
+    background-color: #1f2238;
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 2rem;
+    padding-top: 1rem;
+    -bottom: 1rem;
+    color: white;
 }
 
 #hero{
@@ -40,7 +56,13 @@
 .carousel {
     width: 100%;
     overflow: hidden;
-    margin: 50px auto;
+    background-color: #2f3353;
+}
+
+.slides figcaption {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .slides figure {
@@ -53,6 +75,7 @@
     width: max-content;
     flex-wrap: nowrap;
     gap: 20px;
+    margin-top: 2rem;
 }
 
 .slides img {
@@ -67,7 +90,7 @@
 .buttons {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .button {
@@ -81,20 +104,21 @@
 
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #1f2238;
 }
 
 
 .photo-files {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 20px;
     flex-wrap: wrap;
-    margin: 30px 0 50px;
+    margin: 30px 0;
+    margin-left: 2rem;
 }
 
 .file-button {
-    background: #5b5a5a;
+    background: #1f2238;
     border: 1px solid #ccc;
     padding: 12px 18px;
     border-radius: 10px;
@@ -156,4 +180,11 @@
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.projects {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
